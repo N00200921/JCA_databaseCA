@@ -135,7 +135,7 @@ class Video_gamesController extends Controller
         $video_game->genre = $request->input('genre');
         $video_game->release_date = $request->input('release_date');
         $video_game->publisher = $request->input('publisher');
-        $video_game->metascore = $request->input('metacritic');
+        $video_game->metascore = $request->input('metascore');
       
         $video_game->save();
 

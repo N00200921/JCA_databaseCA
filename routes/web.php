@@ -39,8 +39,8 @@ Route::get('/user/video_games/{id}', [UserVideo_gamesController::class, 'show'])
 
 Route::get('/admin/video_games/', [AdminVideo_gamesController::class, 'index'])->name('admin.video_games.index');
 Route::get('/admin/video_games/create', [AdminVideo_gamesController::class, 'create'])->name('admin.video_games.create');
-Route::get('/admin/video_games/{id}', [AdminVideo_gamesController::class, 'show'])->name('admin.video_games.show');
+Route::get('/admin/video_games/{id}/show', [AdminVideo_gamesController::class, 'show'])->name('admin.video_games.show');
 Route::post('/admin/video_games/store', [AdminVideo_gamesController::class, 'store'])->name('admin.video_games.store');
-Route::get('/admin/video_games/{id}edit', [AdminVideo_gamesController::class, 'edit'])->name('admin.video_games.edit');
-Route::put('/admin/video_games/{id}', [AdminVideo_gamesController::class, 'update'])->name('admin.video_games.update');
+Route::get('/admin/video_games/{id}/edit', [AdminVideo_gamesController::class, 'edit'])->name('admin.video_games.edit');
+Route::put('/admin/video_games/{id}/update', [AdminVideo_gamesController::class, 'update'])->name('admin.video_games.update');
 Route::delete('/admin/video_games/{id}', [AdminVideo_gamesController::class, 'destroy'])->name('admin.video_games.destroy');
